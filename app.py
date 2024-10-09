@@ -14,7 +14,7 @@ def analyze_image(image):
     
     # Lógica simplificada: se a média for baixa, consideramos como possível presença de lixo
     # (isto é uma simplificação e não é precisa para detecção real de lixo)
-    if mean_value < 100:  # Este valor limite pode ser ajustado
+    if mean_value < 5:  # Este valor limite pode ser ajustado
         return "Possível presença de lixo detectada!", mean_value
     else:
         return "Nenhum indício significativo de lixo detectado.", mean_value
